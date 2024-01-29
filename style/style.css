@@ -1,0 +1,749 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* login part */
+body#loginBody {
+    background: url("../images/login-background.jpg") no-repeat center center
+        fixed;
+    background-size: cover;
+}
+
+div#errorMessage {
+    background: #fff;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    padding: 11px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the form container */
+.appForm {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #cecfc0;
+    border-radius: 5px;
+    background-color: #f4f6f9;
+}
+
+/* Style the form input containers */
+.appFormInputContainer {
+    margin-bottom: 20px;
+}
+
+/* Style labels */
+.appFormInputContainer label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Change the label text color */
+}
+
+/* Style input fields */
+.appFormInput {
+    width: 100%;
+    height: 40px; /* Adjust the height as needed */
+    border: 1px solid #d6d7da;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Style the submit button */
+.appForm button {
+    background-color: #f685a2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+.appForm button:hover {
+    background-color: #d40339;
+}
+
+p.responseMessage {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 33px;
+    padding: 20px;
+}
+
+p.responseMessage__success {
+    background: rgba(0, 128, 0, 0.1); /* Use green background for success */
+}
+
+p.responseMessage__error {
+    background: rgba(255, 0, 0, 0.1); /* Use red background for error */
+}
+
+div#userAddFormContainer {
+    padding-top: 50px;
+}
+
+div.loginHeader {
+    text-align: center;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+div.loginHeader {
+    margin-bottom: 150px;
+}
+
+div.loginHeader h1 {
+    font-size: 100px;
+    color: #f685a2;
+    padding: 0px;
+    margin: 0px;
+}
+div.loginHeader p {
+    color: #ffdae3;
+    font-size: 50px;
+    margin: 0px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+div.loginHeader p:after {
+    content: "";
+    display: block;
+    height: 5px;
+    background: #f685a2;
+    margin: 0 auto;
+}
+
+div.loginBody form {
+    margin: 0 auto;
+    width: 450px;
+    background-image: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
+
+div.loginInputsContainer {
+    margin-top: 30px;
+}
+
+div.loginInputsContainer label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+div.loginInputsContainer input {
+    height: 30px;
+    width: 100%;
+    border: 2px solid #d40339;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+}
+
+div.loginButtonContainer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+div.loginButtonContainer button {
+    font-size: 20px;
+    padding: 10px 40px;
+    background: #f685a2;
+    border: none;
+    color: #fff;
+}
+
+div.header {
+    width: 100%;
+    height: 20px;
+    background: #f685a1;
+    text-align: center;
+}
+div.banner {
+    background: url("../images/banner.jpg") no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+div.homepageContainer {
+    width: 100%;
+    max-width: 900px;
+    margin: 0auto;
+}
+div.bannerHeader h1 {
+    font-size: 90px;
+    color: #f685a1;
+    line-height: 100%;
+}
+div.bannerHeader p {
+    font-size: 30px;
+    color: #f685a1;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+p.bannerTagline {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #fff;
+}
+
+/* dashboard style */
+#dashboardMainContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+div.dashboard_sidebar {
+    width: 20%;
+    background: #323232;
+    height: 105vh;
+}
+
+div.dashboard_content_container {
+    width: 80%;
+    background: #f4f6f9;
+}
+
+h3.dashboard_logo {
+    color: #f685a1;
+    font-size: 80px;
+    text-align: center;
+}
+
+div.dashboard_sidebar_user {
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+div.dashboard_sidebar_user img {
+    width: 80px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #f685a1;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+div.dashboard_sidebar_user Span {
+    top: 20%;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+}
+
+ul.dashboard_menu_lists {
+    padding: 0;
+    margin-top: 5px;
+}
+
+ul.dashboard_menu_lists li.liMainMenu {
+    text-transform: uppercase;
+}
+
+ul.dashboard_menu_lists li.liMainMenu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    padding: 0px 15px;
+    padding-bottom: 15px;
+    padding-right: 0px;
+    padding-top: 15px;
+}
+
+ul.dashboard_menu_lists li.liMainMenu a i {
+    font-size: 23px;
+}
+ul.dashboard_menu_lists li.menuActive {
+    background: #f685a1;
+    color: #fff;
+}
+
+ul.dashboard_menu_lists li:hover {
+    background: #f685a1;
+    color: #fff;
+    transition: 0.3s all;
+}
+
+div.dashboard_topNav {
+    background: #fff;
+    padding: 20px;
+}
+
+div.dashboard_topNav a {
+    color: #848383;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a#logoutBtn {
+    float: right;
+}
+
+div.dashboard_content {
+    padding: 50px 10px 10px 10px;
+}
+
+div.dashboard_content_main {
+    background: #fff;
+    height: 100%;
+    border: 1px solid #cdcdcd;
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+
+/* User Add Page */
+div.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+div.column {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+div.column-5 {
+    width: 41.67%;
+}
+
+div.column-7 {
+    width: 58.33%;
+}
+
+h1.section_header {
+    font-size: 21px;
+    color: #f685a1;
+    border-bottom: 1px solid #ffd7e1;
+    padding-bottom: 11px;
+    padding: 10px;
+    border-left: 4px solid #f690bf;
+    margin-bottom: 15px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #cacaca;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #f4f6f9;
+}
+
+table td {
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+}
+
+p.userCount {
+    text-align: right;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f685a1;
+}
+
+a.subMenuLink {
+    padding-left: 25px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    text-transform: none;
+    font-size: 15px !important;
+}
+
+a.subMenuLink i {
+    font-size: 20px !important;
+}
+
+ul.subMenus {
+    background: #c26a80;
+    padding: 0px;
+    display: none;
+}
+
+i.mainMenuIconArrow {
+    font-size: 19px !important;
+    margin-top: 7px;
+}
+
+.subMenuActive {
+    font-weight: bold;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background: #763a49;
+}
+
+.bookTextAreaInput {
+    width: 100%;
+    height: 75px;
+    border-radius: 5px;
+    border-color: #d7d7d7;
+}
+
+.bookImages {
+    width: 100px;
+    height: 100px;
+}
+
+#suppliersSelect,
+#books {
+    display: block;
+    width: 100%;
+    height: 100px;
+    border-color: #d2d2d2;
+}
+
+.orderBookBtn {
+    background: #d93f65;
+    color: #fff;
+}
+
+.orderBtn {
+    height: 33px;
+    border: none;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.submitOrderBookBtn {
+    background: #323232;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 8px 9px;
+}
+
+.marginTop20 {
+    margin-top: 20px;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+#orederBookLists {
+    margin-top: 20px;
+}
+
+.bookNameSelect {
+    font-size: 15px;
+    border: none;
+    background: #fafafa;
+    padding: 3px 17px;
+    border: 1px solid #b0b0b0;
+    border-radius: 2px;
+}
+
+div.orderBookRow {
+    padding: 6px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.orderBookQty {
+    height: 33px;
+    border: none;
+    background: #f8f8f8;
+    text-indent: 10px;
+    border: 1px solid #d6d6d6;
+    border-radius: 2px;
+}
+
+#orderBookLists .row {
+    margin: 0px !important;
+}
+
+.suppliersRows .supplierName {
+    margin-left: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #a1a1a1;
+    text-transform: uppercase;
+}
+
+.supplierRows .row {
+    padding: 8px 0px;
+}
+
+.appbtn {
+    border: none;
+    padding: 4px 8px;
+    background: #ff5858;
+    border-radius: 2px;
+}
+
+.removeOrderBtn {
+    background: #ff5858;
+    color: #fff;
+    float: right;
+}
+
+.boList {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-bottom: solid 1px #d1d1d1;
+    border-radius: 5px;
+    background: #fbfbfb;
+}
+
+.boList p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #d55f7d;
+    font-size: 16px;
+}
+
+.boList table td,
+.boList table th {
+    border: none;
+    border-bottom: 1px dotted #b7b7b7;
+}
+
+.boList table td {
+    padding: 13px 14px;
+    font-size: 13px;
+}
+
+.boList table th {
+    padding: 15px 10px;
+}
+
+.boList table {
+    border: none;
+}
+
+.boOrderUpdateBtnContainer {
+    margin-top: 20px;
+}
+
+.updateBoBtn {
+    color: #f685a1;
+    background: #fff;
+    border: 1px solid #f685a1;
+}
+
+.updateBoBtn:hover {
+    color: #fff;
+    background: #f685a1;
+}
+
+.bo-badge {
+    padding: 4px 6px;
+    border: 1px solid;
+}
+
+.bo-badge-pending {
+    background: #ff7c76;
+    border-color: #556455;
+}
+
+.bo-badge-complete {
+    background: #b5ebb5;
+    border-color: green;
+}
+
+.bo-badge-incomplete {
+    background: #f7e640;
+    color: #392b2b;
+    border-color: #a3a3a3;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 320px;
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+div.col50 {
+    width: 50%;
+}
+
+div.dashboard_content_main {
+    display: flex;
+    flex-direction: row;
+}
+
+.appDeliveryHistory {
+    border: 1px solid #ff5722;
+    background: none;
+}
+
+.appDeliveryHistory:hover {
+    background: #ff5722;
+    color: #fff;
+}
+
+.deliveryHistoryTable th {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.reportTypeContainer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 31px;
+}
+
+.reportType {
+    border: 1px solid #c2c6c2;
+    padding: 10px 24px;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 14px;
+    margin-left: 21px;
+    width: 100%;
+}
+
+.reportType:hover {
+    background: #763a49;
+    color: #fff;
+}
+
+.reportExportBtn {
+    padding: 4px 15px;
+    display: inline block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #f685a1;
+    color: white;
+    margin-left: 13px;
+    font-size: 11px;
+    border: 1px solid transparent;
+}
+
+.reportExportBtn:hover {
+    border: 1px solid #f685a1;
+    background: #fff;
+    color: #f685a1;
+}
+
+.reportType p {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
